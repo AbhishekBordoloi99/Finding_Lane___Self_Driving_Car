@@ -27,17 +27,6 @@ def line_generate(image, lines):
     return line_image 
 
 
-#image = cv2.imread('test_image.jpg')
-#load_image=np.copy(image)
-#canny= canny(load_image)
-#cropped_image=focus_on(canny)
-#lines=cv2.HoughLinesP(cropped_image, 2, np.pi/180, 100, np.array([]), minLineLength=40, maxLineGap=5)
-#line_image=line_generate(image, lines)
-#final_image=cv2.addWeighted(load_image, 0.8, line_image, 1,1)
-#cv2.imwrite('Road_line.jpg', final_image)
-#cv2.imshow('Region', final_image)
-#cv2.waitKey(0)
-
 
 vid=cv2.VideoCapture('test2.mp4')
 fourcc=cv2.VideoWriter_fourcc(*'XVID')
